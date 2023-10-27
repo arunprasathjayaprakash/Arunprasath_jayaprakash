@@ -13,7 +13,7 @@ h1 {
     padding: 10px 20px;
 }
 
-button {
+/*a.button {
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
@@ -23,9 +23,29 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+}*/
+
+a.button {
+    appearance: button;
+    text-decoration: none;
+    display: button;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0;
+    position: absolute;
+   top: 20%;
+   right: 44.5%;
+   -ms-transform: translateY(50%);
+   transform: translateY(50%);
 }
 
-button:hover {
+a.button:hover {
     background-color: #45a049;
 }
 
