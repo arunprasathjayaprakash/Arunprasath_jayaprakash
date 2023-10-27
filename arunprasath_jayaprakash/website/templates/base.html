@@ -1,22 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <style>
-    h1 {text-align: center;}
-    table {text-align: center;}
-    </style>
-  <link rel="stylesheet" href="static/style.css">
-  {% if Project %}
-  <title >
-    Contact Management {{Project}}
-  </title>
-  {% else %}
-  <title>
-    Manage Contacts
-  </title>
-  {% endif %}
-</head>
-<body>
+{% extends "base_generic_template.html" %}
+
+{% block content %}
 <h1 >Contact Management</h1>
   <table class="center">
     <tr >
@@ -28,10 +12,9 @@
     </tr>
   </table>
 <a class="button" href="/create">Create New Contact</a>
-<!--{% block content%}-->
-<!--{% endblock %}-->
 <footer>
   <p>&copy;<a>Created by Arun Prasath Jayaprakash</a></p>
 </footer>
-</body>>
-</html>
+<!--</body>-->
+<!--</html>-->
+{% endblock content %}
