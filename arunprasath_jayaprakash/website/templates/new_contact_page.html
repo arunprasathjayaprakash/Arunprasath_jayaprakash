@@ -3,7 +3,12 @@
 
 {% block content%}
 <h1 > Create New Contact</h1>
-
+<form action="data_value" method="get">
+    <label class="input_button" for="your_name">Your name: </label>
+    <input class="input_button" id="your_name" type="text" name="your_name" value="{{ contact_name }}">
+    <br>
+    <input class="button" type="submit" value="OK">
+</form>
 <footer>
   <p>&copy;<a>Created by Arun Prasath Jayaprakash</a></p>
 </footer>
