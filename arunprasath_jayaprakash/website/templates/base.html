@@ -5,8 +5,9 @@
     h1 {text-align: center;}
     table {text-align: center;}
     </style>
+  <link rel="stylesheet" href="static/style.css">
   {% if Project %}
-  <title>
+  <title >
     Contact Management {{Project}}
   </title>
   {% else %}
@@ -16,15 +17,21 @@
   {% endif %}
 </head>
 <body>
-<h1>Contact Management</h1>
-  <table>
-    <tr>
-      <th>Contact Name</th>
-      <th>Email</th>
-      <th>Created Time</th>
+<h1 >Contact Management</h1>
+  <table class="center">
+    <tr >
+      <td class="space-right"><b>Contact Name</b></td>
+      <td></td>
+      <td class="space-right"><b>Email</b></td>
+      <td></td>
+      <td class="space"><b>Created Time</b></td>
     </tr>
   </table>
+<button type="button" onclick="/create">Create New Contact</button>
 {% block content%}
 {% endblock %}
+<footer>
+  <p>&copy;<a>Created by Arun Prasath Jayaprakash</a></p>
+</footer>
 </body>>
 </html>
