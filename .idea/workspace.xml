@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7e70d71d-7324-40e3-9721-f0888b9eaee9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/arunprasath_jayaprakash/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/static/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base_genric_template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/delete_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/detail_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/edit_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/new_contact_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Arunprasath_jayaprakash.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Arunprasath_jayaprakash.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/arunprasath_jayaprakash/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/arunprasath_jayaprakash/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/arunprasath_jayaprakash/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/arunprasath_jayaprakash/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/db.sqlite3" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2XK0A0XYlgnUML6JMewoq3S1r4c" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/csulb_projects/Arunprasath_jayaprakash"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7e70d71d-7324-40e3-9721-f0888b9eaee9" name="Changes" comment="" />
+      <created>1698362316822</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698362316822</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

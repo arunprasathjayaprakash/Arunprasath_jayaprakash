@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    h1 {text-align: center;}
+    table {text-align: center;}
+    </style>
+  {% if Project %}
+  <title>
+    Contact Management {{Project}}
+  </title>
+  {% else %}
+  <title>
+    Manage Contacts
+  </title>
+  {% endif %}
+</head>
+<body>
+<h1>Contact Management</h1>
+  <table>
+    <tr>
+      <th>Contact Name</th>
+      <th>Email</th>
+      <th>Created Time</th>
+    </tr>
+  </table>
+{% block content%}
+{% endblock %}
+</body>>
+</html>
