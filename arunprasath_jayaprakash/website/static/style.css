@@ -40,7 +40,7 @@ a.button {
     margin: 0;
     position: absolute;
    top: 20%;
-   right: 44.5%;
+   right: 43%;
    -ms-transform: translateY(50%);
    transform: translateY(50%);
 }
@@ -84,3 +84,24 @@ footer {
     top: 20%;
    right: 44.5%;
 }
+
+input[type=submit] {
+    appearance: button;
+    text-decoration: none;
+    display: button;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0;
+    position: absolute;
+   top: 20%;
+   right: 51%;
+   -ms-transform: translateY(50%);
+   transform: translateY(50%);
+}
+
