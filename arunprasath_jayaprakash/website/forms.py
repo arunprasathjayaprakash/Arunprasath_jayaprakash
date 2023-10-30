@@ -3,7 +3,7 @@ from django.db import models
 class FormFields(forms.Form):
     name = forms.CharField(label='Name',max_length=200)
     email = forms.EmailField(required=True)
-    notes = forms.CharField(max_length=5000)
+    notes = forms.CharField(required=False,max_length=5000)
 
 class Contacts(models.Model):
     name = models.CharField(max_length=30)

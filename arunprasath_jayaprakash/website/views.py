@@ -1,8 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse , HttpResponseRedirect
-from .forms import FormFields
-from django.contrib import messages
-from django import forms
+from .forms import FormFields , Contacts
 
 def index(request):
     content = {
@@ -27,10 +25,16 @@ def record_data(request):
         if form.is_valid():  # All validation rules pass
             name = form.cleaned_data['name']
             email = form.cleaned_data['email']
-            return render(request, 'create_page.html',{'form':form,'message':'Created Successfully'})
+            if not Contacts.objects.filter(name=name,email=email).exists():
+                contact_add = Contacts(name=name, email=email)
+                contact_add.save()
+                return render(request, 'create_page.html',{'form':form,'message':'Created Successfully'})
+            else:
+                return render(request, 'create_page.html', {'form': form, 'message': 'Contact Already Exists in Database'})
     else:
         form = FormFields()
     return render(request, 'create_page.html',{'form':form})
+
 
 def home(request):
     return HttpResponse("<h1>home from pycharm</h2>")
