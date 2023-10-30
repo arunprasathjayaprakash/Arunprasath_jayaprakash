@@ -5,12 +5,6 @@
 <h1 > Create New Contact</h1>
 <form method="POST" action = 'data_value'>
      <div  style ="text-align:center;">
-<!--         <label >Name :</label>-->
-<!--        <input type="text" id="Name" >-->
-<!--        <br><br>-->
-<!--        <label > Email :</label>-->
-<!--        <input type="text" id="mail_id" >-->
-<!--        -->
     {% csrf_token %}
     {{ form.as_p }}
      </div>

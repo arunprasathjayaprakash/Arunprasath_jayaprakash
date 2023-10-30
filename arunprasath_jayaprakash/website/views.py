@@ -3,13 +3,14 @@ from django.http import HttpResponse , HttpResponseRedirect
 from .forms import FormFields , Contacts
 
 def index(request):
+
     content = {
-        'Name' : 'Arun prasath jayaprakash',
-        'Email': 'arun826.jp@gmail.com',
-        'Project' : 'Django'
+     'value':[val for val in  Contacts.objects.all().values()]
     }
 
-    return render(request , 'base.html' , {'render':content})
+
+    # return render(request , 'base.html' , {'render':content})
+    return render(request , 'base_test.html' , {'render':content})
 
 def form_fields():
     pass
@@ -20,9 +21,9 @@ def create_contact(request):
     return render(request, 'create_page.html')
 
 def record_data(request):
-    if request.method == 'POST':  # If the form has been submitted...
-        form = FormFields(request.POST)  # A form bound to the POST data
-        if form.is_valid():  # All validation rules pass
+    if request.method == 'POST':
+        form = FormFields(request.POST)
+        if form.is_valid():
             name = form.cleaned_data['name']
             email = form.cleaned_data['email']
             if not Contacts.objects.filter(name=name,email=email).exists():
@@ -34,7 +35,6 @@ def record_data(request):
     else:
         form = FormFields()
     return render(request, 'create_page.html',{'form':form})
-
 
 def home(request):
     return HttpResponse("<h1>home from pycharm</h2>")
