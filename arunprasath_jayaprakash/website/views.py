@@ -3,14 +3,21 @@ from django.http import HttpResponse , HttpResponseRedirect
 from .forms import FormFields , Contacts
 
 def index(request):
+    columns = ['name','email','created_time']
+    formatted_value = []
 
+    for val in Contacts.objects.all().values():
+        temp = []
+        for k, v in val.items():
+            if k in columns:
+                temp.append(v)
+        formatted_value.append(temp)
     content = {
-     'value':[val for val in  Contacts.objects.all().values()]
+     'value':formatted_value
     }
 
-
     # return render(request , 'base.html' , {'render':content})
-    return render(request , 'base_test.html' , {'render':content})
+    return render(request , 'base_template_working.html' , {'render':content})
 
 def form_fields():
     pass
@@ -18,7 +25,8 @@ def form_fields():
 
 def create_contact(request):
     # return render(request,'test_template.html')
-    return render(request, 'create_page.html')
+    form = FormFields()
+    return render(request, 'create_page.html',{'form':form})
 
 def record_data(request):
     if request.method == 'POST':

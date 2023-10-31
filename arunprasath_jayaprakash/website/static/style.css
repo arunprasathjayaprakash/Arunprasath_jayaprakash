@@ -40,7 +40,7 @@ a.button {
     margin: 0;
     position: absolute;
    top: 20%;
-   right: 43%;
+   right: 45%;
    -ms-transform: translateY(50%);
    transform: translateY(50%);
 }
@@ -66,7 +66,13 @@ footer {
 }
 
 .space-right {
-    padding-right : 10em;
+    padding-right : 5.5em;
+    font-size: 20px
+}
+
+.space-center {
+    padding-left : -5em;
+    padding-right : 5em;
     font-size: 20px
 }
 
@@ -125,3 +131,39 @@ input[type=button] {
    transform: translateY(50%);
 }
 
+.info {
+    padding-right : 4em;
+    font-size: 15px
+}
+
+.button-cancel{
+    appearance: button;
+    text-decoration: none;
+    display: button;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    /*margin: 0;*/
+    position: absolute;
+   top: 25%;
+   right: 41%;
+   -ms-transform: translateY(50%);
+   transform: translateY(50%);
+}
+
+p {
+   text-align: center;
+}
+
+.fa_fa-pencil {
+    right: 41%
+}
+
+.delete-bin {
+    right: 50%
+}

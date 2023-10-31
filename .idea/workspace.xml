@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e70d71d-7324-40e3-9721-f0888b9eaee9" name="Changes" comment="Added changes to main page and created test files">
-      <change afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base_test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base_template_working.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/arunprasath_jayaprakash/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/arunprasath_jayaprakash/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base_generic_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base_generic_template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base_test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/create_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/create_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -40,7 +48,7 @@
     &quot;last_opened_file_path&quot;: &quot;C:/csulb_projects/Arunprasath_jayaprakash&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.views">
+  <component name="RunManager" selected="Python.test">
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Arunprasath_jayaprakash" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -55,6 +63,27 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/arunprasath_jayaprakash/manage.py" />
       <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Arunprasath_jayaprakash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/arunprasath_jayaprakash/website" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/arunprasath_jayaprakash/website/test.py" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -86,6 +115,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.manage" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.views" />
       </list>
     </recent_temporary>
@@ -199,43 +229,38 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
-          <line>27</line>
+          <line>35</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
-          <line>25</line>
+          <line>33</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
-          <line>36</line>
+          <line>44</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
-          <line>31</line>
+          <line>39</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
-          <line>33</line>
+          <line>41</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
-          <line>28</line>
+          <line>36</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
-          <line>29</line>
+          <line>37</line>
           <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
-          <line>11</line>
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,6 +1,7 @@
 {% extends "base_generic_template.html" %}
 
 {% block content %}
+{% load render_table from django_tables2 %}
 <h1 >Contact Management</h1>
   <table class="center">
     <tr >
@@ -12,21 +13,19 @@
     </tr>
   </table>
 <div>
-<table class="center">
   {% for data_key,data_value in render.items %}
       {% for value in data_value %}
-  <tr>
-        {% for key , val in value.items %}
-          {% if key == 'name' or key == 'email' or key == 'created_time' %}
-            <td class="info">{{ val }}</td>
-          {% endif %}
-        {% endfor%}
-    </tr>
+    <p class>{{value.0}}  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {{value.1}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  {{value.2}}</p>
+  <button class="fa_fa-pencil" style="font-size:17px"><i class="fa fa-pencil"><br></i></button>
+  <button class="delete-bin" style="font-size:16px"> <i class="material-icons">delete</i></button>
+    <br>
+
       {% endfor %}
+
     {% endfor %}
-  </table>
+<!--  <a class="button" href="/data_value">Create New Contact</a>-->
   </div>
-<a class="button" href="/data_value">Create New Contact</a>
+
 <footer>
   <p>&copy;<a>Created by Arun Prasath Jayaprakash</a></p>
 </footer>
