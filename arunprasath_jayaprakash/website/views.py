@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .forms import FormFields , Contacts , UpdateForm , DeleteForm
 
-def index(request,message=False,update=True):
+def index(request,message=False,update=False,delete=False):
     columns = ['id','name','email','created_time']
     formatted_value = []
 
@@ -19,9 +19,12 @@ def index(request,message=False,update=True):
     if message:
         if update:
             return render(request, 'base_template_working.html', {'render': content,'message': 'Contact Updated Successfully'})
-        else:
+        elif delete:
             return render(request, 'base_template_working.html',
                           {'render': content, 'message': 'Contact deleted Successfully'})
+        else:
+            return render(request, 'base_template_working.html',
+                          {'render': content, 'message': 'Contact Created Successfully'})
     return render(request , 'base_template_working.html' , {'render':content})
 
 def create_contact(request):
@@ -38,7 +41,7 @@ def record_data(request):
             if not Contacts.objects.filter(name=name,email=email).exists():
                 contact_add = Contacts(name=name, email=email)
                 contact_add.save()
-                return render(request, 'create_page.html',{'form':form,'message':'Created Successfully'})
+                return index(request,message=True)
             else:
                 return render(request, 'create_page.html', {'form': form, 'message': 'Contact Already Exists in Database'})
     else:
@@ -84,4 +87,4 @@ def delete_confirmation(request,id):
 def delete_record(request,id):
     db = Contacts.objects.get(id=id)
     db.delete()
-    return index(request,message=True,update=False)
+    return index(request,message=True,delete=True)
