@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
+import mimetypes
+
+mimetypes.add_type("text/css", ".css", True)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -39,7 +42,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'website.apps.WebsiteConfig',
-    'django_tables2'
 ]
 
 MIDDLEWARE = [
@@ -120,8 +122,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "website/static"),
+STATICFILES_DIR = [
+    os.path.join(BASE_DIR, "static"),
+    # r'C:\csulb_projects\Arunprasath_jayaprakash\arunprasath_jayaprakash\website\static/'
 ]
 
 # Default primary key field type

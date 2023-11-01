@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e70d71d-7324-40e3-9721-f0888b9eaee9" name="Changes" comment="Added work in progress files">
+    <list default="true" id="7e70d71d-7324-40e3-9721-f0888b9eaee9" name="Changes" comment="Worked out update flows">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/arunprasath_jayaprakash/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/arunprasath_jayaprakash/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base_template_working.html" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base_template_working.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/edit_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/edit_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/update_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/update_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +68,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Arunprasath_jayaprakash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/arunprasath_jayaprakash/arunprasath_jayaprakash" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/arunprasath_jayaprakash/arunprasath_jayaprakash/settings.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Arunprasath_jayaprakash" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -107,6 +134,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.manage" />
+        <item itemvalue="Python.settings" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.views" />
       </list>
@@ -209,7 +237,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698807784524</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Worked out update flows">
+      <option name="closed" value="true" />
+      <created>1698808133039</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1698808133039</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,7 +268,8 @@
     <MESSAGE value="Added changes to main page and created test files" />
     <MESSAGE value="Added edit , button and data from Db" />
     <MESSAGE value="Added work in progress files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added work in progress files" />
+    <MESSAGE value="Worked out update flows" />
+    <option name="LAST_COMMIT_MESSAGE" value="Worked out update flows" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -271,21 +308,6 @@
           <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
           <line>33</line>
           <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
-          <line>49</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
-          <line>48</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
-          <line>45</line>
-          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -2,20 +2,20 @@
 
 {% block content %}
 {% load static %}
-<link rel="stylesheet" href="{% static 'website/style.css' %}">
+<link rel="stylesheet" href="{% static 'style.css' %}">
 <h1 >Contact Management</h1>
   <table class="center">
     <tr >
-      <td class="space-right"><b>Type in the details</b></td>
+      <td class="space"><b>Type in the details</b></td>
     </tr>
   </table>
  <form method="POST" action = 'complete'>
 <div style="width:1650px; margin:0 auto;" class="div-button">
   {% csrf_token %}
     {{ record.as_p}}
+  <a class="div-button" type="submit" value="Submit">Submit</a>
+<a class="div-button" href='/'>Home</a>
   </div>
-<input class="button" type="submit" value="Submit">
-<a class="button" href='/'>Home</a>
 </form>
 <footer>
   <p>&copy;<a>Created by Arun Prasath Jayaprakash</a></p>
