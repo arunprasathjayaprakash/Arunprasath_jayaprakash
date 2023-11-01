@@ -1,7 +1,7 @@
 {% extends "base_generic_template.html" %}
 
 {% block content %}
-{% load render_table from django_tables2 %}
+
 <h1 >Contact Management</h1>
   <table class="center">
     <tr >
@@ -12,20 +12,19 @@
       <td class="space"><b>Created Time</b></td>
     </tr>
   </table>
-<div>
+  <div style="width:1650px; margin:0 auto;" class="div-button">
   {% for data_key,data_value in render.items %}
       {% for value in data_value %}
-    <p class>{{value.0}}  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {{value.1}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  {{value.2}}</p>
-  <button class="fa_fa-pencil" style="font-size:17px"><i class="fa fa-pencil"><br></i></button>
-  <button class="delete-bin" style="font-size:16px"> <i class="material-icons">delete</i></button>
+    <p class>{{value.1}}  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {{value.2}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  {{value.3}}</p>
+  <a class="fa_fa-pencil" style="font-size:20px" href="/edit/{{value.0}}/"><i class="fa fa-pencil"><br></i></a>
+  <a class="delete-bin" style="font-size:16px" href="/create"> <i class="material-icons">delete</i></a>
     <br>
 
       {% endfor %}
 
     {% endfor %}
-<!--  <a class="button" href="/data_value">Create New Contact</a>-->
-  </div>
-
+</div >
+  <a class="div-button" href="/data_value">Create New Contact</a>
 <footer>
   <p>&copy;<a>Created by Arun Prasath Jayaprakash</a></p>
 </footer>

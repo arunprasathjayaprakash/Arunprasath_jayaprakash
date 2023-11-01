@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e70d71d-7324-40e3-9721-f0888b9eaee9" name="Changes" comment="Added changes to main page and created test files">
-      <change afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base_template_working.html" afterDir="false" />
+    <list default="true" id="7e70d71d-7324-40e3-9721-f0888b9eaee9" name="Changes" comment="Added edit , button and data from Db">
+      <change afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/update_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/arunprasath_jayaprakash/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/arunprasath_jayaprakash/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base_generic_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base_generic_template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base_test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/create_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/create_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base_template_working.html" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base_template_working.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/edit_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/edit_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -48,7 +47,7 @@
     &quot;last_opened_file_path&quot;: &quot;C:/csulb_projects/Arunprasath_jayaprakash&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.manage">
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Arunprasath_jayaprakash" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -201,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698695389354</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added edit , button and data from Db">
+      <option name="closed" value="true" />
+      <created>1698790143829</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1698790143829</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,45 +229,61 @@
     <MESSAGE value="Worked on create new contact page" />
     <MESSAGE value="Added Db conditonal insert" />
     <MESSAGE value="Added changes to main page and created test files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added changes to main page and created test files" />
+    <MESSAGE value="Added edit , button and data from Db" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added edit , button and data from Db" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
-          <line>35</line>
+          <line>31</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
-          <line>33</line>
+          <line>29</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
-          <line>44</line>
+          <line>40</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
-          <line>39</line>
+          <line>35</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
-          <line>41</line>
+          <line>37</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
-          <line>36</line>
+          <line>32</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
-          <line>37</line>
+          <line>33</line>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
+          <line>45</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

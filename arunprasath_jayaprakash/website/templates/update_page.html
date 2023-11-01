@@ -6,16 +6,17 @@
 <h1 >Contact Management</h1>
   <table class="center">
     <tr >
-      <td class="space-right"><b>Update Contact</b></td>
+      <td class="space-right"><b>Type in the details</b></td>
     </tr>
   </table>
+ <form method="POST" action = 'complete'>
 <div style="width:1650px; margin:0 auto;" class="div-button">
-    <p>Name : {{record.1}}</p>
-    <p>Email : {{record.2}}</p>
-  <p>Created Time : {{record.3}}</p>
+  {% csrf_token %}
+    {{ record.as_p}}
   </div>
-<a class="button" href="/update/{{record.0}}/True">Update</a>
+<input class="button" type="submit" value="Submit">
 <a class="button" href="/data_value">Home</a>
+</form>
 <footer>
   <p>&copy;<a>Created by Arun Prasath Jayaprakash</a></p>
 </footer>

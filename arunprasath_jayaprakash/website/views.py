@@ -1,9 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse , HttpResponseRedirect
-from .forms import FormFields , Contacts
+from .forms import FormFields , Contacts , UpdateForm
 
 def index(request):
-    columns = ['name','email','created_time']
+    columns = ['id','name','email','created_time']
     formatted_value = []
 
     for val in Contacts.objects.all().values():
@@ -18,10 +18,6 @@ def index(request):
 
     # return render(request , 'base.html' , {'render':content})
     return render(request , 'base_template_working.html' , {'render':content})
-
-def form_fields():
-    pass
-
 
 def create_contact(request):
     # return render(request,'test_template.html')
@@ -44,5 +40,14 @@ def record_data(request):
         form = FormFields()
     return render(request, 'create_page.html',{'form':form})
 
-def home(request):
-    return HttpResponse("<h1>home from pycharm</h2>")
+def edit_record(request,id,id_1='False'):
+    record = Contacts.objects.get(id=id)
+    record_list = [record.id,record.name, record.email, record.created_time]
+    if id_1=='True':
+        form_data = {'id':record_list[0],'name':record_list[1],'email':record_list[2],'created_time':record_list[3]}
+        update_form = UpdateForm(initial=form_data)
+        return render(request, 'update_page.html', {'record': update_form})
+    return render(request, 'edit_page.html',{'record':record_list})
+
+def update_record(request):
+    return render(request, 'edit_page.html')
