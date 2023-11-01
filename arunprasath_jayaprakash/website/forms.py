@@ -9,9 +9,16 @@ class FormFields(forms.Form):
     notes = forms.CharField(required=False,max_length=5000)
 
 class UpdateForm(forms.Form):
+    id = forms.IntegerField(disabled=True)
     name = forms.CharField(label='Name', max_length=200)
     email = forms.EmailField(required=True)
     notes = forms.CharField(required=False, max_length=5000)
+
+class DeleteForm(forms.Form):
+    id = forms.IntegerField(disabled=True)
+    name = forms.CharField(disabled=True)
+    email = forms.EmailField(disabled=True)
+    notes = forms.CharField(disabled=True)
 
 class Contacts(models.Model):
     name = models.CharField(max_length=30)

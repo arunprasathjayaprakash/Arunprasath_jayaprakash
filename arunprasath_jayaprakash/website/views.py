@@ -1,8 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponse , HttpResponseRedirect
-from .forms import FormFields , Contacts , UpdateForm
+from .forms import FormFields , Contacts , UpdateForm , DeleteForm
 
-def index(request):
+def index(request,message=False,update=True):
     columns = ['id','name','email','created_time']
     formatted_value = []
 
@@ -17,6 +16,12 @@ def index(request):
     }
 
     # return render(request , 'base.html' , {'render':content})
+    if message:
+        if update:
+            return render(request, 'base_template_working.html', {'render': content,'message': 'Contact Updated Successfully'})
+        else:
+            return render(request, 'base_template_working.html',
+                          {'render': content, 'message': 'Contact deleted Successfully'})
     return render(request , 'base_template_working.html' , {'render':content})
 
 def create_contact(request):
@@ -49,5 +54,34 @@ def edit_record(request,id,id_1='False'):
         return render(request, 'update_page.html', {'record': update_form})
     return render(request, 'edit_page.html',{'record':record_list})
 
-def update_record(request):
-    return render(request, 'edit_page.html')
+def update_record(request,id):
+    if request.method == 'POST':
+        form = FormFields(request.POST)
+        if form.is_valid():
+            db = Contacts.objects.get(id=id)
+            if db.name != form.cleaned_data['name'] or db.email != form.cleaned_data['email']:
+                db.name = form.cleaned_data['name']
+                db.email = form.cleaned_data['email']
+                db.save()
+                return index(request,message=True,update=True)
+            else:
+                record = Contacts.objects.get(id=id)
+                record_list = [record.id, record.name, record.email, record.created_time]
+                form_data = {'id': record_list[0], 'name': record_list[1], 'email': record_list[2],
+                             'created_time': record_list[3]}
+                update_form = UpdateForm(initial=form_data)
+                return render(request, 'update_page.html', {'record': update_form, 'message': 'No New Information to update'})
+
+
+def delete_confirmation(request,id):
+    db = Contacts.objects.get(id=id)
+    record_list = [db.id, db.name, db.email, db.created_time]
+    form_data = {'id': record_list[0], 'name': record_list[1], 'email': record_list[2],
+                 'created_time': record_list[3]}
+    update_form = DeleteForm(initial=form_data)
+    return render(request, 'delete_page.html', {'record': update_form})
+
+def delete_record(request,id):
+    db = Contacts.objects.get(id=id)
+    db.delete()
+    return index(request,message=True,update=False)

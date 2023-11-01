@@ -1,7 +1,8 @@
 {% extends "base_generic_template.html" %}
 
 {% block content %}
-
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
 <h1 >Contact Management</h1>
   <table class="center">
     <tr >
@@ -17,7 +18,7 @@
       {% for value in data_value %}
     <p class>{{value.1}}  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {{value.2}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  {{value.3}}</p>
   <a class="fa_fa-pencil" style="font-size:20px" href="{% url 'edit_value' value.0 %}"><i class="fa fa-pencil"><br></i></a>
-  <a class="delete-bin" style="font-size:16px" href="/create"> <i class="material-icons">delete</i></a>
+  <a class="delete-bin" style="font-size:16px" href="{% url 'delete_record' value.0 %}"> <i class="material-icons">delete</i></a>
     <br>
 
       {% endfor %}
@@ -26,6 +27,11 @@
     <a class="div-button" href="/data_value">Create New Contact</a>
 </div >
 <!--  <a class="div-button" href="/data_value">Create New Contact</a>-->
+<script>
+    {% if message %}
+    alert('{{ message }}');
+    {% endif %}
+</script>
 <footer>
   <p>&copy;<a>Created by Arun Prasath Jayaprakash</a></p>
 </footer>

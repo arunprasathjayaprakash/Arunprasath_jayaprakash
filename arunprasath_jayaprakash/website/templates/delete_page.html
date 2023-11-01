@@ -1,0 +1,28 @@
+{% extends "base_generic_template.html" %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<h1 >Contact Management</h1>
+  <table class="center">
+    <tr >
+      <td class="space"><b>Are your sure you want to delete this contact?</b></td>
+    </tr>
+  </table>
+ <form method="POST" action = '/delete/{{record.id.value}}'>
+<div style="width:1650px; margin:0 auto;" class="div-button">
+  {% csrf_token %}
+    {{ record.as_p}}
+  <button class="div-button" type="submit" value="Submit">Confirm</button>
+<a class="div-button" href='/'>Home</a>
+  </div>
+</form>
+<script>
+    {% if message %}
+    alert('{{ message }}');
+    {% endif %}
+</script>
+<footer>
+  <p>&copy;<a>Created by Arun Prasath Jayaprakash</a></p>
+</footer>
+{% endblock content %}

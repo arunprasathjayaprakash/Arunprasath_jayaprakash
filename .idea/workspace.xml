@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e70d71d-7324-40e3-9721-f0888b9eaee9" name="Changes" comment="Added Update flows" />
+    <list default="true" id="7e70d71d-7324-40e3-9721-f0888b9eaee9" name="Changes" comment="Added Update flows">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base_template_working.html" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base_template_working.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/delete_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/delete_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/update_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/update_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -244,7 +253,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698822422238</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added Update flows">
+      <option name="closed" value="true" />
+      <created>1698823102044</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1698823102044</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -276,38 +293,33 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
-          <line>31</line>
-          <option name="timeStamp" value="7" />
+          <line>86</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
-          <line>29</line>
-          <option name="timeStamp" value="8" />
+          <line>83</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
-          <line>40</line>
-          <option name="timeStamp" value="9" />
+          <line>81</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
-          <line>35</line>
-          <option name="timeStamp" value="10" />
+          <line>85</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
-          <line>37</line>
-          <option name="timeStamp" value="11" />
+          <line>22</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
-          <line>32</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py</url>
-          <line>33</line>
-          <option name="timeStamp" value="13" />
+          <line>18</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

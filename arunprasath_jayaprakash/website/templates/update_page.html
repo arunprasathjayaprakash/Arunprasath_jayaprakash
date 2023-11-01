@@ -9,14 +9,19 @@
       <td class="space"><b>Type in the details</b></td>
     </tr>
   </table>
- <form method="POST" action = 'complete'>
+ <form method="POST" action = '/complete/{{record.id.value}}'>
 <div style="width:1650px; margin:0 auto;" class="div-button">
   {% csrf_token %}
     {{ record.as_p}}
-  <a class="div-button" type="submit" value="Submit">Submit</a>
+  <button class="div-button" type="submit" value="Submit">Submit</button>
 <a class="div-button" href='/'>Home</a>
   </div>
 </form>
+<script>
+    {% if message %}
+    alert('{{ message }}');
+    {% endif %}
+</script>
 <footer>
   <p>&copy;<a>Created by Arun Prasath Jayaprakash</a></p>
 </footer>
