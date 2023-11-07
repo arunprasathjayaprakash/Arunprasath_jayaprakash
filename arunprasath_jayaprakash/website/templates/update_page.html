@@ -10,11 +10,11 @@
     </tr>
   </table>
  <form method="POST" action = '/complete/{{record.id.value}}'>
-<div style="width:1650px; margin:0 auto;" class="div-button">
+<div style="width:1650px; margin:0 auto;" class="container">
   {% csrf_token %}
     {{ record.as_p}}
-  <button class="div-button" type="submit" value="Submit">Submit</button>
-<a class="div-button" href='/'>Home</a>
+  <button class="button">Submit</button>
+<a class="div-button-1" href='/'>Home</a>
   </div>
 </form>
 <script>

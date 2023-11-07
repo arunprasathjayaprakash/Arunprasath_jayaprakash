@@ -9,12 +9,14 @@
       <td class="space"><b>Update Contact</b></td>
     </tr>
   </table>
-<div style="width:1650px; margin:0 auto;" class="div-button">
-    <p>Name : {{record.1}}</p>
-    <p>Email : {{record.2}}</p>
-  <p>Created Time : {{record.3}}</p>
-    <a class="div-button" href="/update/{{record.0}}/True">Update</a>
-<a class="div-button" href="/">Home</a>
+<div style="width:1650px; margin:0 auto;" class="container">
+  <p><b>Name</b> : {{record.1}}</p>
+    <p><b>Email</b> : {{record.2}}</p>
+  <p><b>Created Time</b> : {{record.3}}</p>
+  <br>
+    <a class="div-button-1" href="/update/{{record.0}}/True">Update</a>
+  <a class="div-button-1" href="/delete_confirmation/{{record.0}}">Delete</a>
+<a class="div-button-1" href="/">Home</a>
   </div>
 
 <footer>
