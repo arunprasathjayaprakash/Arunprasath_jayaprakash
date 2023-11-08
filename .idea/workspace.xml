@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e70d71d-7324-40e3-9721-f0888b9eaee9" name="Changes" comment="Fixed return to home after creating contact">
+    <list default="true" id="7e70d71d-7324-40e3-9721-f0888b9eaee9" name="Changes" comment="Updated Flow and added delete button to update page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base_generic_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base_generic_template.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base_template_working.html" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base_template_working.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/create_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/create_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/delete_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/delete_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/edit_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/edit_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/update_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/update_page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +28,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;arunprasathjayaprakash&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="53653f78-b7ab-4974-8328-76033e769872" />
+        <option name="url" value="https://github.com/arunprasathjayaprakash/Arunprasath_jayaprakash.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -277,7 +290,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698872146494</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Updated Flow and added delete button to update page">
+      <option name="closed" value="true" />
+      <created>1699381316085</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1699381316085</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -304,6 +325,7 @@
     <MESSAGE value="Added Update flows" />
     <MESSAGE value="Added working update and delete flows" />
     <MESSAGE value="Fixed return to home after creating contact" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed return to home after creating contact" />
+    <MESSAGE value="Updated Flow and added delete button to update page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Flow and added delete button to update page" />
   </component>
 </project>

@@ -13,6 +13,7 @@
 <div style="width:1650px; margin:0 auto;" class="container">
   {% csrf_token %}
     {{ record.as_p}}
+  <br>
   <a class="div-button-1" type="submit" href='/delete/{{record.id.value}}'>Confirm</a>
 <a class="div-button-1" href='/'>Home</a>
   </div>

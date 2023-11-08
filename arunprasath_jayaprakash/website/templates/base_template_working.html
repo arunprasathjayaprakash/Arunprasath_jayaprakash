@@ -3,7 +3,7 @@
 {% block content %}
 {% load static %}
 <link rel="stylesheet" href="{% static 'style.css' %}">
-<h1 >Contact Management</h1>
+<h1> <em> Contact Management </em></h1>
   <table class="center">
     <tr >
       <td class="space-right"><b>Contact</b></td>
@@ -17,15 +17,17 @@
   <div style="width:1650px; margin:0 auto;" class="container">
   {% for data_key,data_value in render.items %}
       {% for value in data_value %}
-    <p>{{value.1}}  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {{value.2}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  {{value.3}}</p>
-  <a class="fa_fa-pencil" style="font-size:20px" href="{% url 'edit_value' value.0 %}"><i class="fa fa-pencil"><br></i></a>
+    <p>{{value.1}}  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {{value.2}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  {{value.3}}
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a class="fa_fa-pencil" style="font-size:20px" href="{% url 'edit_value' value.0 %}"><i class="fa fa-pencil"><br></i></a></p>
   <a class="delete-bin" style="font-size:16px" href="{% url 'delete_record' value.0 %}"> <i class="material-icons">delete</i></a>
-    <br>
 
       {% endfor %}
 
     {% endfor %}
-    <a class="div-button" href="/data_value">Create New Contact</a>
+    <br>
+    <br>
+    <a class="div-button-1" href="/data_value">Create New Contact</a>
 </div >
 <!--  <a class="div-button" href="/data_value">Create New Contact</a>-->
 <script>
