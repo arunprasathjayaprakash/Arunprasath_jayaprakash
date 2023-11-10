@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e70d71d-7324-40e3-9721-f0888b9eaee9" name="Changes" comment="Updated Flow and added delete button to update page">
+    <list default="true" id="7e70d71d-7324-40e3-9721-f0888b9eaee9" name="Changes" comment="Final Commit with fix to alignment , fonts , button layouts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/static/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base_template_working.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/base_test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/test_template.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/create_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/create_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/detail_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/new_contact_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/arunprasath_jayaprakash/website/templates/new_contact_page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699381316085</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Final Commit with fix to alignment , fonts , button layouts">
+      <option name="closed" value="true" />
+      <created>1699646643609</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1699646643609</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -327,6 +332,7 @@
     <MESSAGE value="Added working update and delete flows" />
     <MESSAGE value="Fixed return to home after creating contact" />
     <MESSAGE value="Updated Flow and added delete button to update page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Flow and added delete button to update page" />
+    <MESSAGE value="Final Commit with fix to alignment , fonts , button layouts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Commit with fix to alignment , fonts , button layouts" />
   </component>
 </project>
