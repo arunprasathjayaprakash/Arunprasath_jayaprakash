@@ -1,20 +1,104 @@
 {% extends "base_generic_template.html" %}
 
 {% block content %}
-<h1 >Contact Management</h1>
-  <table class="center">
-    <tr >
-      <td class="space-right"><b>Contact Name</b></td>
-      <td></td>
-      <td class="space-right"><b>Email</b></td>
-      <td></td>
-      <td class="space"><b>Created Time</b></td>
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<h1><em>Contact Management</em></h1>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 40%;
+  margin: auto;
+}
+
+<!--td, th {-->
+<!--  border: 1px solid #dddddd;-->
+<!--  border-style: dotted;-->
+<!--  text-align: center;-->
+<!--  padding: 8px;-->
+<!--  margin: auto;-->
+<!--}-->
+
+<!--tr:nth-child(even) {-->
+<!--  background-color: #dddddd;-->
+<!--}-->
+<!--  .container {-->
+<!--    margin-left: 0;-->
+<!--  }-->
+
+tbody {
+  display: block;
+  max-height: 500px;
+  margin: auto;
+}
+
+thead,
+tbody tr {
+  display: table;
+  width: 80%;
+  margin: 0 auto;
+  word-wrap: break-word;
+}
+
+thead {
+  width: 50%;
+}
+
+table {
+  width: 700px;
+
+}
+
+
+td:nth-child(1) {
+  width:20%
+}
+
+td:nth-child(3) {
+  width:20%
+}
+
+
+</style>
+<table >
+    <tr>
+        <td ><b>Contact</b></td>
+        <td ><b>Email</b></td>
+        <td ><b>Created Time</b></td>
     </tr>
-  </table>
-<a class="button" href="/data_value">Create New Contact</a>
+</table>
+<hr style="width:35%;text-align:center;margin:auto">
+<br>
+<div class="container">
+    {% for data_key, data_value in render.items %}
+        {% for value in data_value %}
+            <table>
+                <tr >
+                    <td >{{value.1}}</td>
+                    <td >{{value.2}}</td>
+                    <td >{{value.3}}</td>
+                </tr>
+
+            </table>
+  <br>
+            <a class="fa_fa-pencil" style="font-size:20px" href="{% url 'edit_value' value.0 %}"><i
+                        class="fa fa-pencil"><br></i></a>
+            <a class="delete-bin" style="font-size:16px" href="{% url 'delete_record' value.0 %}"> <i
+                        class="material-icons">delete</i></a>
+            <br>
+  <br>
+        {% endfor %}
+    {% endfor %}
+    <br>
+    <a class="div-button-1" href="/data_value">Create New Contact</a>
+</div>
+<script>
+    {% if message %}
+    alert('{{ message }}');
+    {% endif %}
+</script>
 <footer>
-  <p>&copy;<a>Created by Arun Prasath Jayaprakash</a></p>
+    <p>&copy;<a>Created by Arun Prasath Jayaprakash</a></p>
 </footer>
-<!--</body>-->
-<!--</html>-->
 {% endblock content %}

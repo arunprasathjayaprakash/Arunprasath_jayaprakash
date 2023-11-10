@@ -11,6 +11,7 @@ h1 {
     text-align: center;
     margin-top: 50px;
     padding: 10px 20px;
+    margin: 50 auto;
 }
 
 a {
@@ -70,7 +71,7 @@ footer {
 }
 
 .space-right {
-    padding-right : 5.5em;
+    padding-right : 5.7em;
     font-size: 20px
 }
 
@@ -165,11 +166,11 @@ p {
 }
 
 a.fa_fa-pencil {
-    right: 41%
+    right: 44%
 }
 
 a.delete-bin {
-    right: 50%
+    right: 55%
 }
 
 .div-button {
@@ -187,6 +188,7 @@ a.delete-bin {
 .container{
     width: 100%;
     text-align: center;
+    margin: auto;
 }
 
 .container button{
@@ -217,4 +219,8 @@ a.delete-bin {
     font-weight: bold;
     line-height: 25px;
 
+}
+.container-1{
+    width: 100%;
+    place-items: center;
 }

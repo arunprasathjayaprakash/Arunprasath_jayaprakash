@@ -2,6 +2,15 @@ from django.shortcuts import render
 from .forms import FormFields , Contacts , UpdateForm , DeleteForm
 
 def index(request,message=False,update=False,delete=False):
+    '''
+    Return main page rendered with information for the user
+
+    :param request: incoming request
+    :param message: returns alert message if True
+    :param update: transfers to update flow if True
+    :param delete: transfers to delete flow if True
+    :return:
+    '''
     columns = ['id','name','email','created_time']
     formatted_value = []
 
@@ -11,28 +20,41 @@ def index(request,message=False,update=False,delete=False):
             if k in columns:
                 temp.append(v)
         formatted_value.append(temp)
+
+    #form content to be posted in the main page
     content = {
      'value':formatted_value
     }
 
-    # return render(request , 'base.html' , {'render':content})
     if message:
         if update:
-            return render(request, 'base_template_working.html', {'render': content,'message': 'Contact Updated Successfully'})
+            return render(request, 'base.html', {'render': content,'message': 'Contact Updated Successfully'})
         elif delete:
-            return render(request, 'base_template_working.html',
+            return render(request, 'base.html',
                           {'render': content, 'message': 'Contact deleted Successfully'})
         else:
-            return render(request, 'base_template_working.html',
+            return render(request, 'base.html',
                           {'render': content, 'message': 'Contact Created Successfully'})
-    return render(request , 'base_template_working.html' , {'render':content})
+
+    return render(request , 'base.html' , {'render':content})
 
 def create_contact(request):
-    # return render(request,'test_template.html')
+    '''
+    Renders form for creating contact
+
+    :param request:
+    :return: contact fields required
+    '''
     form = FormFields()
     return render(request, 'create_page.html',{'form':form})
 
 def record_data(request):
+    '''
+    Adds data to DB when requested returns alert message
+
+    :param request: valid POST request
+    :return: render Success if True
+    '''
     if request.method == 'POST':
         form = FormFields(request.POST)
         if form.is_valid():
@@ -49,6 +71,14 @@ def record_data(request):
     return render(request, 'create_page.html',{'form':form})
 
 def edit_record(request,id,id_1='False'):
+    '''
+    Edits record from update page if request is valid
+
+    :param request: Incoming request
+    :param id: Id for the record to be retrived
+    :param id_1:
+    :return: Returns True if Success
+    '''
     record = Contacts.objects.get(id=id)
     record_list = [record.id,record.name, record.email, record.created_time]
     if id_1=='True':
@@ -58,6 +88,13 @@ def edit_record(request,id,id_1='False'):
     return render(request, 'edit_page.html',{'record':record_list})
 
 def update_record(request,id):
+    '''
+    Returns updated message with valid request
+
+    :param request: request
+    :param id: id for data to be updated
+    :return: Return Success if request is valid
+    '''
     if request.method == 'POST':
         form = FormFields(request.POST)
         if form.is_valid():
@@ -77,6 +114,13 @@ def update_record(request,id):
 
 
 def delete_confirmation(request,id):
+    '''
+    Transfers to delete page after confirmation
+
+    :param request: valid Request for deleting request
+    :param id: id of the record to be deleted
+    :return: Success if valid
+    '''
     db = Contacts.objects.get(id=id)
     record_list = [db.id, db.name, db.email, db.created_time]
     form_data = {'id': record_list[0], 'name': record_list[1], 'email': record_list[2],
@@ -85,6 +129,13 @@ def delete_confirmation(request,id):
     return render(request, 'delete_page.html', {'record': update_form})
 
 def delete_record(request,id):
+    '''
+    Deletes record from DB
+
+    :param request: valid request for deletion
+    :param id: id for deleting record
+    :return: transfers to index with message if success
+    '''
     db = Contacts.objects.get(id=id)
     db.delete()
     return index(request,message=True,delete=True)
