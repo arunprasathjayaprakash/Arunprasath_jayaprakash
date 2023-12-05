@@ -60,12 +60,13 @@ def record_data(request):
         if form.is_valid():
             name = form.cleaned_data['name']
             email = form.cleaned_data['email']
-            if not Contacts.objects.filter(name=name,email=email).exists():
+            if not Contacts.objects.filter(name=name).exists() and not Contacts.objects.filter(email=email).exists():
                 contact_add = Contacts(name=name, email=email)
                 contact_add.save()
                 return index(request,message=True)
             else:
-                return render(request, 'create_page.html', {'form': form, 'message': 'Contact Already Exists in Database'})
+                return render(request, 'create_page.html', {'form': form, 'message': 'Name or email'
+                                                                                     ' Already Exists in Database'})
     else:
         form = FormFields()
     return render(request, 'create_page.html',{'form':form})
