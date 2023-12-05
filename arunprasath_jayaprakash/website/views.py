@@ -9,7 +9,7 @@ def index(request,message=False,update=False,delete=False):
     :param message: returns alert message if True
     :param update: transfers to update flow if True
     :param delete: transfers to delete flow if True
-    :return:
+
     '''
     columns = ['id','name','email','created_time']
     formatted_value = []
@@ -100,10 +100,21 @@ def update_record(request,id):
         if form.is_valid():
             db = Contacts.objects.get(id=id)
             if db.name != form.cleaned_data['name'] or db.email != form.cleaned_data['email']:
-                db.name = form.cleaned_data['name']
-                db.email = form.cleaned_data['email']
-                db.save()
-                return index(request,message=True,update=True)
+                if not Contacts.objects.filter(name=form.cleaned_data['name']).exists() or  not Contacts.objects.filter(
+                        email=form.cleaned_data['email']).exists():
+                    db.name = form.cleaned_data['name']
+                    db.email = form.cleaned_data['email']
+                    db.save()
+                    return index(request,message=True,update=True)
+                else:
+                    record = Contacts.objects.get(id=id)
+                    record_list = [record.id, record.name, record.email, record.created_time]
+                    form_data = {'id': record_list[0], 'name': record_list[1], 'email': record_list[2],
+                                 'created_time': record_list[3]}
+                    update_form = UpdateForm(initial=form_data)
+                    return render(request, 'update_page.html',
+                                  {'record': update_form, 'message': 'Data Exists in the database as a seperate entry'})
+
             else:
                 record = Contacts.objects.get(id=id)
                 record_list = [record.id, record.name, record.email, record.created_time]
