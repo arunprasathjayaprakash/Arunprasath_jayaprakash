@@ -12,7 +12,16 @@
  <form method="POST" action = '/complete/{{record.id.value}}'>
 <div style="width:1650px; margin:0 auto;" class="container">
   {% csrf_token %}
-    {{ record.as_p}}
+<!--    {{ record.as_p}}-->
+  {% for field in record.visible_fields %}
+      {% if field.name != 'id' %}
+        <div class="fieldWrapper">
+          {{ field.errors }}
+          {{ field.label_tag }} {{ field }}
+        </div>
+      {% endif %}
+  <br>
+  {% endfor %}
   <button class="button">Submit</button>
 <a class="div-button-1" href='/'>Home</a>
   </div>

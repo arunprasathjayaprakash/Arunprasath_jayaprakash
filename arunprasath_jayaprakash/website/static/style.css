@@ -202,7 +202,9 @@ a.delete-bin {
 }
 
 .container button:nth-child(odd) {
-  background-color: red;
+  background-color: green;
+    display: inline-block;
+    width: auto;
 }
 
 .container button:nth-child(even) {
