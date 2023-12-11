@@ -24,6 +24,6 @@ class Contacts(models.Model):
     name = models.CharField(max_length=30)
     email = models.EmailField(max_length=100)
     notes = models.CharField(max_length=500)
-    created_time = models.TimeField(auto_now_add=True)
+    created_time = models.DateTimeField(auto_now_add=True)
 
 # class Tables(table.Tables)
