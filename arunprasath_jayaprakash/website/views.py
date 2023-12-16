@@ -101,7 +101,7 @@ def update_record(request,id):
         if form.is_valid():
             db = Contacts.objects.get(id=id)
             if db.name != form.cleaned_data['name'] or db.email != form.cleaned_data['email']:
-                if not Contacts.objects.filter(name=form.cleaned_data['name']).exists() and  not Contacts.objects.filter(
+                if not Contacts.objects.filter(name=form.cleaned_data['name']).exists() or  not Contacts.objects.filter(
                         email=form.cleaned_data['email']).exists():
                     db.name = form.cleaned_data['name']
                     db.email = form.cleaned_data['email']
